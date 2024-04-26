@@ -84,12 +84,18 @@ body *{
     z-index: 1;
     top: 50%;
     transform: translateY(-50%);
-    transition: 0.2s;
+    cursor: pointer;
+
+    animation: slide-back 0.2s;
+}
+
+#theme-button button:hover{
+    outline: 8px solid var(--highlight-color);
 }
 
 .light #theme-button button{
-    right: 0;
-    left: initial;
+    animation: slide-in 0.2s forwards;
+    /* forwards mantém o objeto na condiçao final da animaçao */
 }
 
 #theme-button span{
@@ -173,4 +179,22 @@ footer{
         --bg-url: url("./assets/bg-desktop-light.jpg");
     }
 
+}
+
+@keyframes slide-in{
+    from{
+        left: 0;
+    }
+    to{
+        left: 50%;
+    }
+}
+
+@keyframes slide-back{
+    from{
+        left: 50%;
+    }
+    to{
+        left: 0;
+    }
 }
