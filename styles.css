@@ -28,8 +28,9 @@
 
 body{
     /* união das propriedades no background: color image repeat position/size */
+    height: 100vh;
     background: var(--bg-url) no-repeat top center/cover;
-    height: 100vh;    
+        
 } 
 
 body *{
