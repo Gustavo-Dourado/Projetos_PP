@@ -37,7 +37,9 @@ body *{
 }
 
 .main-container{
-    width: 360px;
+    width: 100vw;
+    max-width: 588px;
+    height: 100vh;
     margin: auto; /* Para centralizar horizontalmente elementos com display block */
     padding: 56px 24px 0;
 }
