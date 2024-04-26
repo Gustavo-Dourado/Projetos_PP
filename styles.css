@@ -38,7 +38,7 @@ body *{
 }
 
 .main-container{
-    width: 100vw;
+    width: 100%;
     max-width: 588px;
     margin: auto; /* Para centralizar horizontalmente elementos com display block */
     padding: 56px 24px 0;
